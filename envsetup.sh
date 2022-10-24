@@ -5,8 +5,7 @@ then
     echo "Python virtual environment exists."
 else
     python3 -m venv env
+    python3 -m pip install -r requirements.txt
 fi
 
-echo "$PWD"
-echo "$WHOAMI"
 source env/bin/activate
